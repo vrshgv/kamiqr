@@ -5,9 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>.kami</title>
+    <meta name="format-detection" content="telephone=no">
+    <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+    <meta name="HandheldFriendly" content="true">
+
+    <!-- Stylesheet -->
+    <link href="static/css/main.css" rel="stylesheet" type="text/css">
+    <link href="static/css/separate-css/custom.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.ico">
   </head>
   <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/separate-js/scripts.js"></script>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>

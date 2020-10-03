@@ -1,0 +1,20 @@
+<svg width="162" height="120" viewBox="0 0 162 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="-0.000244141" width="162" height="120" fill="white"/>
+<path d="M154 7H7.00002C7.00022 9.63333 7 8.76848 7 10.95V82.05C7 84.2315 7.00022 84.6833 7.00009 86H154C154 83.6958 154 84.2315 154 82.05V10.95L154 9.45703C154 8.5612 154 8.15692 154 7Z" fill="#FBFBFB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M71 11H10V15H71V11Z" fill="#EBEBEB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M58 19H10V23H58V19Z" fill="#EBEBEB"/>
+<path d="M137.747 16H142.25C142.441 16 142.633 16.0653 142.78 16.1954C143.073 16.4555 143.073 16.8781 142.78 17.1382L140.531 19.805C140.387 19.9303 140.198 20 140.001 20C139.804 20 139.615 19.9303 139.471 19.805L137.22 17.1389C136.927 16.8775 136.927 16.4555 137.22 16.1954C137.365 16.066 137.556 16.0012 137.747 16Z" fill="#E1E1E1"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M151 27H10V28H151V27Z" fill="#F7F7F7"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M70 32H10V36H70V32Z" fill="#EBEBEB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M118 40H10V44H118V40Z" fill="#EBEBEB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M32 48H10V52H32V48Z" fill="#EBEBEB"/>
+<rect x="127" y="31" width="24" height="24" rx="2" fill="#FFF8C7"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M70 59H10V63H70V59Z" fill="#EBEBEB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M118 67H10V71H118V67Z" fill="#EBEBEB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M32 75H10V79H32V75Z" fill="#EBEBEB"/>
+<rect x="127" y="58" width="24" height="24" rx="2" fill="#FECDD2"/>
+<path d="M154 90H7.00002C7.00022 90.6667 7 90.4477 7 91V109C7 109.552 7.00022 109.667 7.00009 110H154C154 109.417 154 109.552 154 109V91L154 90.622C154 90.3952 154 90.2929 154 90Z" fill="#FBFBFB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M71 94H10V98H71V94Z" fill="#EBEBEB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M58 102H10V106H58V102Z" fill="#EBEBEB"/>
+<path d="M137.747 98H142.25C142.441 98 142.633 98.0653 142.78 98.1954C143.073 98.4555 143.073 98.8781 142.78 99.1382L140.531 101.805C140.387 101.93 140.198 102 140.001 102C139.804 102 139.615 101.93 139.471 101.805L137.22 99.1389C136.927 98.8775 136.927 98.4555 137.22 98.1954C137.365 98.066 137.556 98.0012 137.747 98Z" fill="#E1E1E1"/>
+</svg>
