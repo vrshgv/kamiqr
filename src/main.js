@@ -12,59 +12,88 @@ import MyShop from './components/shop/MyShop'
 import Login from './components/general/Login.vue'
 import Reset from './components/general/Reset'
 import Settings from './components/general/Settings'
+import store from './store'
 
 Vue.config.productionTip = false
 
 Vue.use(VueRouter)
 
+const ifNotAuthenticated = (to, from, next) => {
+  if (!store.getters.isAuthenticated) {
+    next()
+    return
+  }
+  next('/')
+}
+
+const ifAuthenticated = (to, from, next) => {
+  if (store.getters.isAuthenticated) {
+    next()
+    return
+  }
+  next('/login')
+}
+
 const routes = [
   {
     path: '/',
-    component: Slider
+    component: Slider,
+    beforeEnter: ifAuthenticated
   },
   {
     path: '/login',
-    component: Login
+    component: Login,
+    beforeEnter: ifNotAuthenticated
   },
   {
     path: '/reset',
-    component: Reset
+    component: Reset,
+    beforeEnter: ifNotAuthenticated
   },
   {
     path: '/settings',
-    component: Settings
+    component: Settings,
+    beforeEnter: ifAuthenticated,
   },
   {
     path: '/slider',
-    component: Slider
+    component: Slider,
+    beforeEnter: ifAuthenticated,
   },
   {
     path: '/new-slider',
-    component: NewSlider
+    component: NewSlider,
+    beforeEnter: ifAuthenticated
   },
   {
     path: '/menu',
-    component: Menu
+    component: Menu,
+    beforeEnter: ifAuthenticated,
   },
   {
     path: '/new-menu',
-    component: NewMenu
+    component: NewMenu,
+    beforeEnter: ifAuthenticated,
   },
   {
     path: '/catalogs',
-    component: Catalogs
+    component: Catalogs,
+    beforeEnter: ifAuthenticated
   },
   {
     path: '/new-catalog',
-    component: NewCatalog
+    component: NewCatalog,
+    beforeEnter: ifAuthenticated
   },
   {
     path: '/orders',
-    component: Orders
+    component: Orders,
+    beforeEnter: ifAuthenticated
   },
   {
     path: '/my-shop',
-    component: MyShop
+    component: MyShop,
+    beforeEnter: ifAuthenticated
   }
 ]
 

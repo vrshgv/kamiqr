@@ -15,7 +15,7 @@
             </div>
             <button type="submit" class="button -blue login__button">Восстановить пароль</button>
             <div class="text-center">
-                <a href="#" class="login__link">Назад</a>
+                <router-link to='/login' class="login__link">Назад</router-link>
             </div>
         </div>
     </div>
