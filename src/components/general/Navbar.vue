@@ -41,7 +41,7 @@
                       </svg>
                       Сменить пароль
                   </a>
-                  <router-link to='/login' class="header__user-sublink">
+                  <a class="header__user-sublink" @click="logout">
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M13.4783 7.82608C13.7183 7.82608 13.9131 7.63129 13.9131 7.39129V2.1739C13.913 0.975652 12.9383 0 11.7391 0H2.1739C0.974796 0 0 0.975652 0 2.1739V17.8261C0 19.0243 0.974796 20 2.1739 20H11.7391C12.9383 20 13.913 19.0243 13.913 17.8261V12.6087C13.913 12.3687 13.7182 12.1739 13.4782 12.1739C13.2382 12.1739 13.0435 12.3687 13.0435 12.6087V17.8261C13.0435 18.5452 12.4583 19.1304 11.7391 19.1304H2.1739C1.45475 19.1304 0.869551 18.5452 0.869551 17.8261V2.1739C0.869551 1.45475 1.45475 0.869551 2.1739 0.869551H11.7391C12.4583 0.869551 13.0435 1.45475 13.0435 2.1739V7.39129C13.0435 7.63129 13.2383 7.82608 13.4783 7.82608Z"
                           fill="#8392A5" />
@@ -50,7 +50,7 @@
                           fill="#8392A5" />
                       </svg>
                       Выйти
-                  </router-link>
+                  </a>
               </div>
           </div>
       </div>
@@ -150,15 +150,21 @@
 </template>
 
 <script>
+import store from '../../store'
+import { AUTH_LOGOUT } from '../../store/actions/auth'
+
 export default {
-  name: 'Navbar'
+  name: 'Navbar',
+  methods: {
+    logout() {
+      // eslint-disable-next-line no-undef
+      store.dispatch(AUTH_LOGOUT)
+        .then(() => {
+          this.$router.push('/login')
+        })
+        .catch(err => {console.log(err)})
+    }
+  },
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-li .router-link-active .sidebar__icon,
-li .router-link-exact-active .sidebar__icon{
-  
- }
-</style>
